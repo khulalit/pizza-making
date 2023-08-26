@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+header nav{
+    display: flex;
+    background-color: #00000077;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    font-weight: 500;
+    gap: 1rem;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+li:hover{
+    text-decoration: underline;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.container {
+    display: flex;
+    background-image: url('/public/assets/pizza.jpg');
+    height: 100dvh;
+    background-size: cover;
+    padding-inline: 2rem ;
+    font-family: 'Work Sans', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.185); */
+    filter: drop-shadow(10px 10px 10px #000);
+}
+a{
+    all: unset;
+}
+#pizza-bike{
+    display: none;
+    position: absolute;
+}
+.btn{
+    text-decoration: none;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #851400;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.btn:hover{
+    box-shadow: 3px 4px 4px #000;
+}
+.left-col{
+    margin-top: 100px;
+    width: 300px;
+}
+
+  /* Responsive layout */
+@media (max-width: 768px) {
+
+.container {
+    flex-direction: column;
+}
+nav{
+    display: none;
+    background-color: red;
+}
+
+.left-col,
+.right-col {
+    width: 100%;
+    }
+
+}
